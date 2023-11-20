@@ -32,8 +32,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Start app and server
-      run: npm start &; node ./server/server.js &
+    - name: Start app frontend
+      run: npm start &
+      
+    - name: Start app backend server
+      run: node ./server/server.js &
 
     - name: Install Playwright supported browsers
       run: npx playwright install 
