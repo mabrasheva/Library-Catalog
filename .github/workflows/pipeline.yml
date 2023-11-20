@@ -35,7 +35,7 @@ jobs:
       run: npm install
 
     - name: Start app frontend for tests
-      run: npm start-for-tests &
+      run: npm start &
       
     - name: Start app backend server
       run: node ./server/server.js &
